@@ -1,0 +1,49 @@
+name: gear_spin
+description: "Gear Spin: Tap & Hit - hyper-casual timing game."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- State management ---
+  provider: ^6.1.2
+
+  # --- Firebase (Auth + Firestore) ---
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.4
+  cloud_firestore: ^5.6.0
+  google_sign_in: ^6.2.2          # optional: Google login (anonymous is the default)
+
+  # --- Monetization ---
+  google_mobile_ads: ^5.3.0       # Banner / Interstitial / Rewarded
+  in_app_purchase: ^3.2.0         # Google Play Billing + StoreKit (No Ads, skins)
+
+  # --- Local persistence / utils ---
+  shared_preferences: ^2.3.4      # offline cache: level stars, coins, owned skins
+  equatable: ^2.0.7
+  intl: ^0.19.0
+
+  # --- UI / UX / audio ---
+  country_flags: ^3.2.0           # leaderboard country flags (SVG, no assets needed)
+  audioplayers: ^6.1.0            # SFX + music
+  vibration: ^2.0.1               # optional richer haptics (HapticFeedback is used by default)
+  cupertino_icons: ^1.0.8
+  url_launcher: ^6.3.2
+
+  # NOTE: The game loop uses Ticker + CustomPainter (no engine dependency).
+  # If you later want particles/sprites/physics, add:  flame: ^1.22.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/

@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "246340584752",
+    "project_id": "gearspin-game",
+    "storage_bucket": "gearspin-game.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246340584752:android:8570c78dffe8e8c46f34f5",
+        "android_client_info": {
+          "package_name": "com.nexalo.gearspin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246340584752-kmqegad9osvel5f2n8achorlo8duibjb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nexalo.gearspin",
+            "certificate_hash": "6da5712bb611c61c61da9bcd8c081278265bdaad"
+          }
+        },
+        {
+          "client_id": "246340584752-tfece90bl2ebkcioqu0ifkua9ij5co1g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nexalo.gearspin",
+            "certificate_hash": "07c11b550e43e8ff2b497345832c6ee7fb2343b5"
+          }
+        },
+        {
+          "client_id": "246340584752-k91tp0hnfq56nqgbpjlc0mgeeidli66k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRqe_tzgh6E7M4MTdt3-zOP9oXIp_0vwg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246340584752-k91tp0hnfq56nqgbpjlc0mgeeidli66k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "246340584752-e9e3acgncptb8qc3trin2ltseoi1epok.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nexalo.gearspin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
