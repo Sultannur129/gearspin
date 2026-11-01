@@ -30,7 +30,7 @@ android {
 
     defaultConfig {
         applicationId = "com.nexalo.gearspin"
-        minSdk = 23  // Firebase / AdMob require >= 23
+        minSdk = 24  // Google Play automatic integrity protection requires >= 24
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
