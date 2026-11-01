@@ -16,22 +16,22 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "com.nexalo.gearspin"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 36
     ndkVersion = "27.0.12077973"
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
+        jvmTarget = "17"
     }
 
     defaultConfig {
         applicationId = "com.nexalo.gearspin"
         minSdk = 24  // Google Play automatic integrity protection requires >= 24
-        targetSdk = flutter.targetSdkVersion
+        targetSdk = 36 // Google Play requirement (Android 16 / API 36)
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
