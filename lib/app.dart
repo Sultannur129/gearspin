@@ -74,10 +74,11 @@ class GearSpinApp extends StatelessWidget {
         ),
         // AdService is informed of the No Ads purchase status via ShopProvider.
         ProxyProvider<ShopProvider, AdService>(
-          update: (_, shop, __) => createDefaultAdService(
+          update: (_, shop, prev) => prev ?? createDefaultAdService(
             isAdsRemoved: () => shop.noAds,
             navigatorKey: navigatorKey,
           ),
+          dispose: (_, service) => service.dispose(),
         ),
       ],
       child: MaterialApp(

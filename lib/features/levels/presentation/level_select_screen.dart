@@ -74,19 +74,22 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
 
     showModalBottomSheet<void>(
       context: context,
+      isScrollControlled: true,
       backgroundColor: Colors.transparent,
       builder: (ctx) => StatefulBuilder(
         builder: (ctx, setModalState) => Container(
-          padding: const EdgeInsets.all(24),
+          constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.88),
+          padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
           decoration: const BoxDecoration(
             color: Color(0xFF1B2160),
             borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
           ),
           child: SafeArea(
             top: false,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
                 Container(
                   width: 40,
                   height: 4,
@@ -175,7 +178,8 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
           ),
         ),
       ),
-    );
+    ),
+  );
   }
 
   @override

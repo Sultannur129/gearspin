@@ -130,10 +130,16 @@ class AdMobService implements AdService {
   Future<void> showInterstitial() async {
     if (adsRemoved) return;
 
-    final ad = _interstitialAd;
+    var ad = _interstitialAd;
     if (ad == null) {
       _loadInterstitial();
-      return;
+      // Allow a brief wait if the ad was in flight
+      for (var i = 0; i < 5; i++) {
+        await Future<void>.delayed(const Duration(milliseconds: 300));
+        ad = _interstitialAd;
+        if (ad != null) break;
+      }
+      if (ad == null) return;
     }
 
     final completer = Completer<void>();
