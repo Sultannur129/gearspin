@@ -46,30 +46,53 @@ Built using Flutter's raw `Ticker` and `CustomPainter` pipelines, the game featu
 
 <table align="center">
   <tr>
-    <td align="center" width="20%"><b>Level Gameplay</b></td>
-    <td align="center" width="20%"><b>120 Procedural Levels</b></td>
-    <td align="center" width="20%"><b>Shop & Skins</b></td>
-    <td align="center" width="20%"><b>Boss Hazard Challenges</b></td>
-    <td align="center" width="20%"><b>Global Leaderboard</b></td>
+    <td align="center" width="25%"><b>🎮 Gameplay Action</b></td>
+    <td align="center" width="25%"><b>🗺️ 120 Levels Map</b></td>
+    <td align="center" width="25%"><b>🎨 Shop & Skins</b></td>
+    <td align="center" width="25%"><b>🏆 Global Leaderboard</b></td>
   </tr>
   <tr>
     <td align="center">
-      <img src="store/screenshots/screenshot_1_gameplay.jpg" width="100%" alt="Gameplay" />
+      <img src="store/screenshots/screenshot_real_1.png" width="100%" alt="Gameplay Action" />
     </td>
     <td align="center">
-      <img src="store/screenshots/screenshot_2_levels.jpg" width="100%" alt="Levels" />
+      <img src="store/screenshots/raw_levels.png" width="100%" alt="120 Levels Progression" />
     </td>
     <td align="center">
-      <img src="store/screenshots/screenshot_3_shop.jpg" width="100%" alt="Shop" />
+      <img src="store/screenshots/raw_shop.png" width="100%" alt="Customization Shop" />
     </td>
     <td align="center">
-      <img src="store/screenshots/screenshot_4_boss.jpg" width="100%" alt="Boss Challenge" />
-    </td>
-    <td align="center">
-      <img src="store/screenshots/raw_leaderboard.png" width="100%" alt="Leaderboard" />
+      <img src="store/screenshots/raw_leaderboard.png" width="100%" alt="Global Leaderboard" />
     </td>
   </tr>
 </table>
+
+<details>
+<summary><b>📱 Tablet & Large Screen Experience (Click to Expand)</b></summary>
+<br>
+<table align="center">
+  <tr>
+    <td align="center" width="25%"><b>Tablet Gameplay</b></td>
+    <td align="center" width="25%"><b>Tablet Levels</b></td>
+    <td align="center" width="25%"><b>Tablet Shop</b></td>
+    <td align="center" width="25%"><b>Tablet Leaderboard</b></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="store/tablet_screenshots/tablet_screen_1.png" width="100%" alt="Tablet Gameplay" />
+    </td>
+    <td align="center">
+      <img src="store/tablet_screenshots/tablet_screen_2.png" width="100%" alt="Tablet Levels" />
+    </td>
+    <td align="center">
+      <img src="store/tablet_screenshots/tablet_screen_3.png" width="100%" alt="Tablet Shop" />
+    </td>
+    <td align="center">
+      <img src="store/tablet_screenshots/tablet_screen_4.png" width="100%" alt="Tablet Leaderboard" />
+    </td>
+  </tr>
+</table>
+</details>
 
 ---
 
@@ -82,7 +105,7 @@ Built using Flutter's raw `Ticker` and `CustomPainter` pipelines, the game featu
   - Dangerous hazards (mines, spikes, barrier targets) mixed with standard targets.
 - **⭐ 3-Star Mastery System**: Earn stars based on shot conservation, accuracy, and clearing speed.
 - **🛡️ Revive & Extra Chance Mechanics**: Watch rewarded ads or use extra lives to continue right where you left off.
-- **🎨 Custom Gear & Shot Skins**: Unlock distinct gear themes (Neon, Steampunk, Cyber, Golden, Classic) through earned coins or In-App Purchases.
+- **🎨 Custom Projectile & Gear Skins**: Unlock vibrant projectile styles (Classic, Comet, Nebula, Ion, Aurora, Inferno, Sakura, Golden Nova) through earned coins or In-App Purchases.
 - **🌍 Global Real-Time Leaderboard**: Compete against players worldwide with Cloud Firestore ranking and automatic country flag display via device locale.
 - **📴 Full Offline Support**: Seamless guest mode and local persistence via `SharedPreferences`. The app gracefully degrades when internet is unavailable and syncs back up when reconnected.
 
@@ -189,7 +212,7 @@ flutter build appbundle --release
 
 ### 🌟 Genel Bakış
 
-**GearSpin: Tap & Hit**, hassas refleks ve zamanlama dinamikleri üzerine inşa edilmiş, akıcı ve yüksek kaliteli bir hiper-gündelik (hyper-casual) mobil arcade oyunudur. Oyuncular ekranın altından dönen merkezi dişliye doğru top fırlatarak, tehlikeli diken ve bombalara çarpmadan tüm hedef topları yerleştirmeye çalışır.
+**Gear Spin: Tap & Hit**, hassas refleks ve zamanlama dinamikleri üzerine inşa edilmiş, akıcı ve yüksek kaliteli bir hiper-gündelik (hyper-casual) mobil arcade oyunudur. Oyuncular ekranın altından dönen merkezi dişliye doğru top fırlatarak, tehlikeli diken ve bombalara çarpmadan tüm hedef topları yerleştirmeye çalışır.
 
 Flutter'ın `Ticker` ve `CustomPainter` API'leri üzerinde geliştirilen özel 120 Hz sabit adımlı (fixed-step) simülasyon motoru sayesinde, hiçbir ağır 3. parti oyun motoruna ihtiyaç duymadan cihazlarda 60/120 FPS ultra akıcı bir performans sunar.
 
@@ -199,30 +222,53 @@ Flutter'ın `Ticker` ve `CustomPainter` API'leri üzerinde geliştirilen özel 1
 
 <table align="center">
   <tr>
-    <td align="center" width="20%"><b>Oyun İçi Oynanış</b></td>
-    <td align="center" width="20%"><b>120 Prosedürel Bölüm</b></td>
-    <td align="center" width="20%"><b>Mağaza & Kostümler</b></td>
-    <td align="center" width="20%"><b>Boss / Tehlike Bölümleri</b></td>
-    <td align="center" width="20%"><b>Küresel Lider Tablosu</b></td>
+    <td align="center" width="25%"><b>🎮 Oyun İçi Oynanış</b></td>
+    <td align="center" width="25%"><b>🗺️ 120 Seviye Haritası</b></td>
+    <td align="center" width="25%"><b>🎨 Kostüm Mağazası</b></td>
+    <td align="center" width="25%"><b>🏆 Küresel Sıralama</b></td>
   </tr>
   <tr>
     <td align="center">
-      <img src="store/screenshots/screenshot_1_gameplay.jpg" width="100%" alt="Oynanış" />
+      <img src="store/screenshots/screenshot_real_1.png" width="100%" alt="Oyun İçi Oynanış" />
     </td>
     <td align="center">
-      <img src="store/screenshots/screenshot_2_levels.jpg" width="100%" alt="Bölümler" />
+      <img src="store/screenshots/raw_levels.png" width="100%" alt="120 Seviye Haritası" />
     </td>
     <td align="center">
-      <img src="store/screenshots/screenshot_3_shop.jpg" width="100%" alt="Mağaza" />
-    </td>
-    <td align="center">
-      <img src="store/screenshots/screenshot_4_boss.jpg" width="100%" alt="Boss Mücadele" />
+      <img src="store/screenshots/raw_shop.png" width="100%" alt="Mağaza ve Kostümler" />
     </td>
     <td align="center">
       <img src="store/screenshots/raw_leaderboard.png" width="100%" alt="Liderlik Sıralaması" />
     </td>
   </tr>
 </table>
+
+<details>
+<summary><b>📱 Tablet ve Geniş Ekran Görselleri (Genişletmek için tıklayın)</b></summary>
+<br>
+<table align="center">
+  <tr>
+    <td align="center" width="25%"><b>Tablet Oynanış</b></td>
+    <td align="center" width="25%"><b>Tablet Seviyeler</b></td>
+    <td align="center" width="25%"><b>Tablet Mağaza</b></td>
+    <td align="center" width="25%"><b>Tablet Sıralama</b></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="store/tablet_screenshots/tablet_screen_1.png" width="100%" alt="Tablet Oynanış" />
+    </td>
+    <td align="center">
+      <img src="store/tablet_screenshots/tablet_screen_2.png" width="100%" alt="Tablet Seviyeler" />
+    </td>
+    <td align="center">
+      <img src="store/tablet_screenshots/tablet_screen_3.png" width="100%" alt="Tablet Mağaza" />
+    </td>
+    <td align="center">
+      <img src="store/tablet_screenshots/tablet_screen_4.png" width="100%" alt="Tablet Sıralama" />
+    </td>
+  </tr>
+</table>
+</details>
 
 ---
 
@@ -235,7 +281,7 @@ Flutter'ın `Ticker` ve `CustomPainter` API'leri üzerinde geliştirilen özel 1
   - Hedef topların arasına yerleştirilmiş tehlikeli engeller (mayranlar, dikenler, kalkanlar).
 - **⭐ 3 Yıldız Başarı Sistemi**: Kalan atış miktarı ve isabet oranına göre her seviyede yıldız ve jeton kazanın.
 - **🛡️ Canlanma ve İkinci Şans**: Ödüllü reklam izleyerek veya hak kullanarak kaldığınız yerden devam edin.
-- **🎨 Zengin Kostüm Mağazası**: Neon, Steampunk, Cyber, Gold ve Klasik dişli/mermi temaları.
+- **🎨 Zengin Kostüm Mağazası**: Klasik, Comet, Nebula, Ion, Aurora, Inferno, Sakura ve Golden Nova temalı özel mermi ve dişli görünümleri.
 - **🌍 Canlı Dünya Sıralaması**: Firebase Cloud Firestore entegrasyonu ile ülke bayraklarıyla donatılmış gerçek zamanlı küresel skor tablosu.
 - **📴 Kesintisiz Çevrimdışı Modu**: İnternet bağlantısı olmasa bile oyun tüm ilerleme ve jetonları yerel veritabanında (`SharedPreferences`) saklar; bağlantı kurulduğunda buluta eşitler.
 
